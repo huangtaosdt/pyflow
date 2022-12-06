@@ -2,13 +2,13 @@
  类sql python链式操作
 
 ## 快速开始
-目前仅支持python2
+目前仅支持python2  
 
 ### 处理tuple、list等iterable对象
 ```
 >>> from common_utils.pyflow import seq
->>> seq([1, 2, 3]).map(lambda x: x+1).get() => [2, 3, 4]
-```
+>>> seq([1, 2, 3]).map(lambda x: x+1).get() => [2, 3, 4] 
+``` 
 
 ### 文件读取
 seq.open(path, mode='r', encoding='utf8', n_limit=None, process_hint=None)
@@ -21,7 +21,7 @@ seq.open(path, mode='r', encoding='utf8', n_limit=None, process_hint=None)
 #### 读取整个文件
 ```
 >>> seq.open('your_file_name', *args).map(...).get()
-```
+``` 
 #### 读取前n行
 ```
 >>> seq.open('your_file_name', n_limit=n, *args)
@@ -34,3 +34,5 @@ seq.open(path, mode='r', encoding='utf8', n_limit=None, process_hint=None)
 贡献patch流程、质量要求
 
 ## 讨论
+  
+
